@@ -34,6 +34,11 @@ namespace LibraryManagementSystem.Models
 
 
 
+        public ICollection < MemberLoans>  MemberLoans{ get; set; } =new List< MemberLoans>();   
+
+
+
+
 
 
 

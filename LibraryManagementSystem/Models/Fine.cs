@@ -21,5 +21,10 @@ namespace LibraryManagementSystem.Models
         public  FineStatus Status { get; set; }
 
 
+
+        public int LoandId { get; set; }
+        public Loan Loan { get; set; } = null!;
+
+
     }
 }

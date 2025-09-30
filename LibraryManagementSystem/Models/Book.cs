@@ -18,5 +18,26 @@ namespace LibraryManagementSystem.Models
         public int AvailableCopies { get; set; }
         public int TotalCopies { get; set; }
 
+
+
+       
+        public int AuthorId { get; set; }
+        public Author Authors { get; set; } = null!;
+
+
+
+
+        public int CatgeoryId { get; set; }
+
+        public Category Category { get; set; } = null!;
+
+
+
+
+        public  ICollection< MemberLoans>   MemberLoans { get; set; }=new List< MemberLoans>();
+
+
+
+
     }
 }

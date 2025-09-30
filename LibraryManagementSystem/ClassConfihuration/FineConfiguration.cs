@@ -31,6 +31,13 @@ namespace LibraryManagementSystem.ClassConfihuration
 
             builder.Property(F => F.PaidDate)
                 .IsRequired(false);
+
+
+
+
+            builder.HasOne(F => F.Loan)
+                .WithOne(l => l.Fine)
+                .HasForeignKey<Fine>(F => F.LoandId); 
         }
     }
 }

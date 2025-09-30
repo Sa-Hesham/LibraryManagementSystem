@@ -12,7 +12,16 @@ namespace LibraryManagementSystem.Models
         public string FirstName { get; set; } = null!;
         public string LastNsme { get; set; } = null!;
 
-        public DateTime BirthDate { get; set; } 
+        public DateTime BirthDate { get; set; }
+
+
+
+
+
+
+
+
+        public  ICollection<Book> AuthorsBook { get; set; } = new List<Book>();
 
 
     }
