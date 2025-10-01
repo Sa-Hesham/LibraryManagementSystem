@@ -20,7 +20,7 @@ namespace LibraryManagementSystem.ClassConfihuration
 
             builder.Property(Cat => Cat.Description)
                     .HasColumnType("varchar")
-                    .HasMaxLength(50);
+                    .HasMaxLength(100);
 
 
             builder.Property(Cat => Cat.Id)

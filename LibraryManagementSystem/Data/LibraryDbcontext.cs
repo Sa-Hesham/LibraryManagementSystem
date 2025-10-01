@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.Data
 {
-    internal class LibraryDbcontext : DbContext
+    public class LibraryDbcontext : DbContext
     {
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

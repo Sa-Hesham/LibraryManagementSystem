@@ -32,7 +32,7 @@ namespace LibraryManagementSystem.ClassConfihuration
                 .HasMaxLength(50);
 
 
-            builder.Property(m => m.Adress)
+            builder.Property(m => m.Address)
             .HasColumnType("Varchar")
             .HasMaxLength(50);
 

@@ -22,7 +22,7 @@ namespace LibraryManagementSystem.Models
 
 
      
-        public string Adress { get; set; } = null!;
+        public string Address { get; set; } = null!;
 
 
         public  DateTime MembershipDate { get; set; }
