@@ -9,7 +9,7 @@ namespace LibraryManagementSystem.Models
     internal class MemberLoans
     {
         public DateTime DueDate { get; set; }
-        public DateTime ReturnDate { get; set; }
+        public DateTime ? ReturnDate { get; set; }
 
 
 
