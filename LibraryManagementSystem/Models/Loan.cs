@@ -11,5 +11,12 @@ namespace LibraryManagementSystem.Models
     {
         public DateTime LoanDate {  get; set; }
         public LoanStatus Status { get; set; }
+
+
+
+        public MemberLoans Member { get; set; } = null!;
+
+
+        public Fine ? Fine { get; set; }
     }
 }

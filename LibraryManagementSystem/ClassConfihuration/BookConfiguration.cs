@@ -33,6 +33,26 @@ namespace LibraryManagementSystem.ClassConfihuration
 
             builder.Property(b => b.Id)
                 .HasColumnName("BookId");
+
+
+            //add relation between book and author 
+
+            builder 
+                .HasOne(B=>B.Authors)
+                .WithMany(a=>a.AuthorsBook)
+                .HasForeignKey(b=>b.AuthorId)
+                .OnDelete(DeleteBehavior.Restrict );
+
+
+
+            //add relation between book and Category
+
+            builder.HasOne(B=>B.Category)
+                .WithMany(Cat=>Cat.Books)
+                .HasForeignKey(B=>B.CatgeoryId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
         }
     }
 }

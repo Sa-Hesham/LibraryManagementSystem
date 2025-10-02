@@ -22,7 +22,7 @@ namespace LibraryManagementSystem.Models
 
 
      
-        public string Adress { get; set; } = null!;
+        public string Address { get; set; } = null!;
 
 
         public  DateTime MembershipDate { get; set; }
@@ -30,6 +30,11 @@ namespace LibraryManagementSystem.Models
 
 
         public MemberStatus Status { get; set; }
+
+
+
+
+        public ICollection < MemberLoans>  MemberLoans{ get; set; } =new List< MemberLoans>();   
 
 
 
